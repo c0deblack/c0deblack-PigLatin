@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class PigLatin {
     /**
@@ -17,6 +20,9 @@ public class PigLatin {
      * @return the pig latin form of in.
      */
     public String returnPigLatin(String in){
-        return "";
+        String output = "";
+        output = in.substring(1, in.length());
+        output += in.substring(0, 1) + "ay";
+        return output;
     }
 }
